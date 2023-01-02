@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>pratice</title>
+        <script>
+            function add(){
+                var x = document.getElementById('x').value;
+                var y = document.getElementById('y').value;
+                var z = Number(x) + Number(y);
+                document.getElementById("demo").value = z;
+                console.log(z);
+            }
+        </script>
+        <style>
+            fieldset{
+                width: 50px;
+                text-align: center;
+            }
+            legend{
+                text-align: center;
+            }
+            #demo{
+                border-color:rgba(255, 255, 240, 0);
+                height:50px;
+            }
+            .box{
+                border-top-color: rgba(0, 0, 0, 0);
+                border-bottom-color: rgb(97, 97, 97);
+                border-right-color: rgba(0, 0, 0, 0);
+                border-left-color: rgba(0, 0, 0, 0);
+                
+                width: 75px;
+            }
+            .add{
+                border-color:rgba(255, 255, 240, 0);
+                width:175px;
+                height:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center">
+            <tr><td>
+            <fieldset>
+                <legend>Calculator</legend>
+                    <input id="demo" />
+                    <input class="box" type="text" id="x" name="xa" />
+                    <input class="box" type="text" id="y" name="ya" />
+                    <input class="add" type="button" onclick="add()" value="add" />
+            </fieldset>
+            </td></tr>
+        </table>
+    </body>
+</html>
